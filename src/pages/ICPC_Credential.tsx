@@ -4,18 +4,18 @@ import { ChevronLeft, MapPin, Users, Code2, Terminal, Cpu, X, ZoomIn, Braces } f
 import { Link } from 'react-router-dom';
 
 // 📸 Import โลโก้การแข่งขัน
-import logo from "../assets/images/credentials/ICPC 2024/logo.jpg";
+import logo from "../assets/images/credentials/ICPC 2024/logo.webp";
 
-// 📸 Import รูปภาพแกลเลอรี่ 1-9 (.jpg)
-import img1 from "../assets/images/credentials/ICPC 2024/1.jpg";
-import img2 from "../assets/images/credentials/ICPC 2024/2.jpg";
-import img3 from "../assets/images/credentials/ICPC 2024/3.jpg";
-import img4 from "../assets/images/credentials/ICPC 2024/4.jpg";
-import img5 from "../assets/images/credentials/ICPC 2024/5.jpg";
-import img6 from "../assets/images/credentials/ICPC 2024/6.jpg";
-import img7 from "../assets/images/credentials/ICPC 2024/7.jpg";
-import img8 from "../assets/images/credentials/ICPC 2024/8.jpg";
-import img9 from "../assets/images/credentials/ICPC 2024/9.jpg";
+// 📸 Import รูปภาพแกลเลอรี่ 1-9 (.webp)
+import img1 from "../assets/images/credentials/ICPC 2024/1.webp";
+import img2 from "../assets/images/credentials/ICPC 2024/2.webp";
+import img3 from "../assets/images/credentials/ICPC 2024/3.webp";
+import img4 from "../assets/images/credentials/ICPC 2024/4.webp";
+import img5 from "../assets/images/credentials/ICPC 2024/5.webp";
+import img6 from "../assets/images/credentials/ICPC 2024/6.webp";
+import img7 from "../assets/images/credentials/ICPC 2024/7.webp";
+import img8 from "../assets/images/credentials/ICPC 2024/8.webp";
+import img9 from "../assets/images/credentials/ICPC 2024/9.webp";
 
 const highlights = [
   { icon: <MapPin className="w-5 h-5 text-red-500" />, title: "VENUE", value: "ENG, CHULA", desc: "คณะวิศวกรรมศาสตร์ จุฬาฯ" },

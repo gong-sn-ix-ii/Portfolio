@@ -3,77 +3,77 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, Smartphone, Zap, MessageCircle, Bell, Code2, ExternalLink, Code, X, ZoomIn } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
-import img1 from "../assets/images/projects/boundless/1.jpg"
-import img2 from "../assets/images/projects/boundless/2.jpg"
-import img3 from "../assets/images/projects/boundless/3.jpg"
-import img4 from "../assets/images/projects/boundless/4.jpg"
-import img5 from "../assets/images/projects/boundless/5.jpg"
-import img6 from "../assets/images/projects/boundless/6.jpg"
-import img7 from "../assets/images/projects/boundless/7.jpg"
-import img8 from "../assets/images/projects/boundless/8.jpg"
-import img9 from "../assets/images/projects/boundless/9.jpg"
-import img10 from "../assets/images/projects/boundless/10.jpg"
+import img1 from "../assets/images/projects/boundless/1.webp"
+import img2 from "../assets/images/projects/boundless/2.webp"
+import img3 from "../assets/images/projects/boundless/3.webp"
+import img4 from "../assets/images/projects/boundless/4.webp"
+import img5 from "../assets/images/projects/boundless/5.webp"
+import img6 from "../assets/images/projects/boundless/6.webp"
+import img7 from "../assets/images/projects/boundless/7.webp"
+import img8 from "../assets/images/projects/boundless/8.webp"
+import img9 from "../assets/images/projects/boundless/9.webp"
+import img10 from "../assets/images/projects/boundless/10.webp"
 
 // 📱 ข้อมูลภาพหน้าจอแอปพลิเคชัน
 const appScreens = [
   {
     id: 1,
-    title: "Real-time Feed",
-    description: "หน้าหลักสำหรับดูโพสต์ อัปเดตสถานะ และสินค้าที่กำลังเปิดประมูล",
+    title: "Welcome Screen",
+    description: "หน้าหลักสำหรับเข้าสู่ระบบหรือสมัครสมาชิก",
     image: img1
   },
   {
     id: 2,
-    title: "Live Auction Room",
-    description: "ระบบประมูลสินค้าแบบ Real-time พร้อมปุ่ม Bidding และราคาล่าสุด",
+    title: "Account Registration",
+    description: "หน้าลงทะเบียนและสมัครบัญชีผู้ใช้งานใหม่",
     image: img2
   },
   {
     id: 3,
-    title: "Social Interaction",
-    description: "ระบบแชทส่วนตัวและการแจ้งเตือนเมื่อคุณชนะการประมูลทันที",
+    title: "Social Interaction Feed",
+    description: "หน้าแสดงโซเชียลฟีดและโพสต์ต่างๆ ของผู้ใช้งาน",
     image: img3
   },
   {
     id: 4,
-    title: "User Profile",
-    description: "จัดการข้อมูลส่วนตัว ดูประวัติการประมูล และสินค้าที่เคยกดไลค์",
+    title: "Auction Marketplace",
+    description: "หน้าสำหรับเข้าร่วมการประมูลสินค้า รูปภาพ และรายการอื่นๆ",
     image: img4
   },
   {
     id: 5,
-    title: "User Profile",
-    description: "จัดการข้อมูลส่วนตัว ดูประวัติการประมูล และสินค้าที่เคยกดไลค์",
+    title: "User Profile Management",
+    description: "จัดการข้อมูลส่วนตัว ข้อมูลโพสต์ และจำนวนผู้ติดตาม",
     image: img5
   },
   {
     id: 6,
-    title: "User Profile",
-    description: "จัดการข้อมูลส่วนตัว ดูประวัติการประมูล และสินค้าที่เคยกดไลค์",
+    title: "Live Auction Details",
+    description: "หน้าจอเข้าร่วมการประมูล พร้อมแสดงรายละเอียดการเสนอราคา (Bid) และราคาปัจจุบัน",
     image: img6
   },
   {
     id: 7,
-    title: "User Profile",
-    description: "จัดการข้อมูลส่วนตัว ดูประวัติการประมูล และสินค้าที่เคยกดไลค์",
+    title: "Create Auction Listing",
+    description: "ตั้งค่าและจัดการข้อมูลเพื่อเปิดประมูลสินค้า",
     image: img7
   },
   {
     id: 8,
-    title: "User Profile",
-    description: "จัดการข้อมูลส่วนตัว ดูประวัติการประมูล และสินค้าที่เคยกดไลค์",
+    title: "Listing Status Processing",
+    description: "หน้าต่างแสดงสถานะการสร้างโพสต์ประมูลสินค้าเข้าสู่ระบบ",
     image: img8
   },
   {
     id: 9,
-    title: "User Profile",
-    description: "จัดการข้อมูลส่วนตัว ดูประวัติการประมูล และสินค้าที่เคยกดไลค์",
+    title: "Auction Dashboard",
+    description: "ผู้จัดการประมูลสามารถแก้ไขและตรวจสอบสถานะการประมูลล่าสุดได้",
     image: img9
   },
   {
     id: 10,
-    title: "User Profile",
-    description: "จัดการข้อมูลส่วนตัว ดูประวัติการประมูล และสินค้าที่เคยกดไลค์",
+    title: "Auction Results & Notifications",
+    description: "แสดงผลผู้ชนะและส่งการแจ้งเตือนแบบ Real-Time ไปยังผู้เข้าร่วมประมูลทุกคนทันที",
     image: img10
   }
 ];

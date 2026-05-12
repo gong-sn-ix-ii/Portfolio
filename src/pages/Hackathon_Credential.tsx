@@ -4,19 +4,19 @@ import { ChevronLeft, Trophy, Users, BrainCircuit, Target, Terminal, Medal, X, Z
 import { Link } from 'react-router-dom';
 
 // 📸 Import รูปภาพรางวัลหลัก (Award)
-import award from "../assets/images/credentials/Hackathon 2024/AI Enginner Prompt Award.jpg";
+import award from "../assets/images/credentials/Hackathon 2024/AI Enginner Prompt Award.webp";
 
 // 📸 Import รูปภาพแกลเลอรี่
-import img1 from "../assets/images/credentials/Hackathon 2024/1.png";
-import img2 from "../assets/images/credentials/Hackathon 2024/2.png";
-import leaderboard from "../assets/images/credentials/Hackathon 2024/Leaderboard Score.png";
-import img3 from "../assets/images/credentials/Hackathon 2024/3.png";
-import img4 from "../assets/images/credentials/Hackathon 2024/4.png";
-import img5 from "../assets/images/credentials/Hackathon 2024/5.png";
-import img6 from "../assets/images/credentials/Hackathon 2024/6.png";
-import img7 from "../assets/images/credentials/Hackathon 2024/7.png";
-import img8 from "../assets/images/credentials/Hackathon 2024/8.png";
-import img9 from "../assets/images/credentials/Hackathon 2024/9.png";
+import img1 from "../assets/images/credentials/Hackathon 2024/1.webp";
+import img2 from "../assets/images/credentials/Hackathon 2024/2.webp";
+import leaderboard from "../assets/images/credentials/Hackathon 2024/Leaderboard Score.webp";
+import img3 from "../assets/images/credentials/Hackathon 2024/3.webp";
+import img4 from "../assets/images/credentials/Hackathon 2024/4.webp";
+import img5 from "../assets/images/credentials/Hackathon 2024/5.webp";
+import img6 from "../assets/images/credentials/Hackathon 2024/6.webp";
+import img7 from "../assets/images/credentials/Hackathon 2024/7.webp";
+import img8 from "../assets/images/credentials/Hackathon 2024/8.webp";
+import img9 from "../assets/images/credentials/Hackathon 2024/9.webp";
 
 // 🎬 Import วิดีโอ
 import hackathonVideo from "../assets/vdo/hackathon/Prompt Ctrl C Ctrl V.mp4";

@@ -6,17 +6,17 @@ import AchievementShowcase from "../components/Archivement";
 import Awards from "../components/Award";
 import Certificates from "../components/Certificates";
 import Skills from "../components/Skills";
-import profileImg from "../assets/images/profile.jpg";
+import profileImg from "../assets/images/profile.webp";
 import { X, FileText, Eye } from "lucide-react"; // เพิ่ม Icon สำหรับ Preview
 import { useLocation } from "react-router-dom";
 
 // Rotating roles for typewriter-like effect
 const ROLES = [
   "Junior Software Engineer",
+  "Junior Mobile Developer",
   "Cybersecurity Enthusiast",
+  "Junior Full-Stack Developer",
   "AI Application Developer",
-  "Mobile Engineer",
-  "Full-Stack Developer",
 ];
 
 const useRotatingText = (items: string[], interval = 2500) => {

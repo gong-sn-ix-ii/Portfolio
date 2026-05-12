@@ -4,8 +4,8 @@ import { ChevronLeft, Shield, Sword, Lock, Search, Terminal, X, ZoomIn, Flag } f
 import { Link } from 'react-router-dom';
 
 // 📸 Import รูปภาพ (ปรับ Path ให้ตรงกับโฟลเดอร์ของคุณ)
-import certImg from "../assets/images/credentials/CTF/CTF_Cert Senior THCTT24_Num675_page-0001.jpg";
-import posterImg from "../assets/images/credentials/CTF/Logo.jpg";
+import certImg from "../assets/images/credentials/CTF/CTF_Cert Senior THCTT24_Num675_page-0001.webp";
+import posterImg from "../assets/images/credentials/CTF/Logo.webp";
 
 // 🛡️ ข้อมูลทักษะที่ใช้ใน CTF (เพื่อเติมเต็มเนื้อหาให้ดูโปรขึ้น แม้จะมีรูปน้อย)
 const ctfSkills = [

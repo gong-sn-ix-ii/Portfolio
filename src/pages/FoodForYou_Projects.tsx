@@ -3,45 +3,135 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, Smartphone, Zap, Store, Bell, Code, ZoomIn, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
-import img1 from "../assets/images/projects/FoodForYou/1.jpg"
-import img2 from "../assets/images/projects/FoodForYou/2.jpg"
-import img3 from "../assets/images/projects/FoodForYou/3.jpg"
-import img4 from "../assets/images/projects/FoodForYou/4.jpg"
-import img5 from "../assets/images/projects/FoodForYou/5.jpg"
-import img6 from "../assets/images/projects/FoodForYou/6.jpg"
-import img7 from "../assets/images/projects/FoodForYou/7.jpg"
-import img8 from "../assets/images/projects/FoodForYou/8.jpg"
-import img9 from "../assets/images/projects/FoodForYou/9.jpg"
-import img10 from "../assets/images/projects/FoodForYou/10.jpg"
-import img10_1 from "../assets/images/projects/FoodForYou/10_1.jpg"
-import img11 from "../assets/images/projects/FoodForYou/11.jpg"
-import img12 from "../assets/images/projects/FoodForYou/12.jpg"
-import img13 from "../assets/images/projects/FoodForYou/13.jpg"
-import img14 from "../assets/images/projects/FoodForYou/14.jpg"
-import img15 from "../assets/images/projects/FoodForYou/15.jpg"
-import img16 from "../assets/images/projects/FoodForYou/16.jpg"
-import img17 from "../assets/images/projects/FoodForYou/17.jpg"
+import img1 from "../assets/images/projects/FoodForYou/1.webp"
+import img2 from "../assets/images/projects/FoodForYou/2.webp"
+import img3 from "../assets/images/projects/FoodForYou/3.webp"
+import img4 from "../assets/images/projects/FoodForYou/4.webp"
+import img5 from "../assets/images/projects/FoodForYou/5.webp"
+import img6 from "../assets/images/projects/FoodForYou/6.webp"
+import img7 from "../assets/images/projects/FoodForYou/7.webp"
+import img8 from "../assets/images/projects/FoodForYou/8.webp"
+import img9 from "../assets/images/projects/FoodForYou/9.webp"
+import img10 from "../assets/images/projects/FoodForYou/10.webp"
+import img10_1 from "../assets/images/projects/FoodForYou/10_1.webp"
+import img11 from "../assets/images/projects/FoodForYou/11.webp"
+import img12 from "../assets/images/projects/FoodForYou/12.webp"
+import img13 from "../assets/images/projects/FoodForYou/13.webp"
+import img14 from "../assets/images/projects/FoodForYou/14.webp"
+import img15 from "../assets/images/projects/FoodForYou/15.webp"
+import img16 from "../assets/images/projects/FoodForYou/16.webp"
+import img17 from "../assets/images/projects/FoodForYou/17.webp"
 
 // 📱 ข้อมูลภาพหน้าจอแอปพลิเคชัน
 const appScreens = [
-  { id: 1, title: "Home Menu", description: "หน้าหลักสำหรับเลือกร้านอาหาร ดูเมนูแนะนำ และโปรโมชันพิเศษ", image: img1 },
-  { id: 2, title: "Order Tracking", description: "ติดตามสถานะออเดอร์แบบ Real-time ตั้งแต่รับคิวจนถึงจัดส่ง", image: img2 },
-  { id: 3, title: "Restaurant Dashboard", description: "หน้ารับออเดอร์สำหรับร้านอาหาร จัดการคิวและรายการอาหารที่ต้องทำ", image: img3 },
-  { id: 4, title: "User Profile", description: "จัดการข้อมูลส่วนตัว ที่อยู่จัดส่ง และดูประวัติการสั่งอาหารย้อนหลัง", image: img4 },
-  { id: 5, title: "Cart & Checkout", description: "สรุปรายการอาหาร คำนวณราคา และเลือกช่องทางการชำระเงิน", image: img5 },
-  { id: 6, title: "Notifications", description: "ระบบแจ้งเตือนเมื่อร้านค้ายืนยันออเดอร์และอัปเดตสถานะการจัดส่ง", image: img6 },
-  { id: 7, title: "Favorite Menus", description: "บันทึกเมนูและร้านอาหารโปรดเพื่อการสั่งซื้อที่รวดเร็วในครั้งต่อไป", image: img7 },
-  { id: 8, title: "Review & Rating", description: "ให้คะแนนความพึงพอใจและรีวิวรสชาติอาหารหลังได้รับบริการ", image: img8 },
-  { id: 9, title: "Search & Filter", description: "ค้นหาเมนูอาหารและกรองหมวดหมู่ร้านค้าตามความต้องการ", image: img9 },
-  { id: 10, title: "Support & Chat", description: "ช่องทางติดต่อร้านอาหารและฝ่ายสนับสนุนลูกค้า", image: img10 },
-  { id: 18, title: "Support & Chat", description: "ช่องทางติดต่อร้านอาหารและฝ่ายสนับสนุนลูกค้า", image: img10_1 },
-  { id: 11, title: "Support & Chat", description: "ช่องทางติดต่อร้านอาหารและฝ่ายสนับสนุนลูกค้า", image: img11 },
-  { id: 12, title: "Support & Chat", description: "ช่องทางติดต่อร้านอาหารและฝ่ายสนับสนุนลูกค้า", image: img12 },
-  { id: 13, title: "Support & Chat", description: "ช่องทางติดต่อร้านอาหารและฝ่ายสนับสนุนลูกค้า", image: img13 },
-  { id: 14, title: "Support & Chat", description: "ช่องทางติดต่อร้านอาหารและฝ่ายสนับสนุนลูกค้า", image: img14 },
-  { id: 15, title: "Support & Chat", description: "ช่องทางติดต่อร้านอาหารและฝ่ายสนับสนุนลูกค้า", image: img15 },
-  { id: 16, title: "Support & Chat", description: "ช่องทางติดต่อร้านอาหารและฝ่ายสนับสนุนลูกค้า", image: img16 },
-  { id: 17, title: "Support & Chat", description: "ช่องทางติดต่อร้านอาหารและฝ่ายสนับสนุนลูกค้า", image: img17 },
+  { 
+    id: 1, 
+    title: "Welcome Screen", 
+    description: "หน้าแรกของแอปพลิเคชัน FoodForYou สำหรับเริ่มต้นการใช้งาน", 
+    image: img1 
+  },
+  { 
+    id: 2, 
+    title: "User Login", 
+    description: "หน้าต่างเข้าสู่ระบบสำหรับผู้ใช้งาน", 
+    image: img2 
+  },
+  { 
+    id: 3, 
+    title: "Account Registration", 
+    description: "หน้าลงทะเบียนและสมัครบัญชีผู้ใช้งานใหม่", 
+    image: img3 
+  },
+  { 
+    id: 4, 
+    title: "Main Order Screen", 
+    description: "หน้าหลักของแอปพลิเคชันสำหรับจัดการและทำรายการออเดอร์", 
+    image: img4 
+  },
+  { 
+    id: 5, 
+    title: "Restaurant Menu", 
+    description: "หน้าแสดงรายการเมนูอาหารทั้งหมดพร้อมราคาของร้าน", 
+    image: img5 
+  },
+  { 
+    id: 6, 
+    title: "Menu Management", 
+    description: "ระบบจัดการเพิ่มรายการอาหารและหมวดหมู่เมนูของร้าน", 
+    image: img6 
+  },
+  { 
+    id: 7, 
+    title: "Quick Order Entry", 
+    description: "บันทึกรายการอาหารที่เลือกเพื่อความรวดเร็วในการสั่งซื้อ", 
+    image: img7 
+  },
+  { 
+    id: 8, 
+    title: "System Processing", 
+    description: "หน้าต่างแสดงสถานะกำลังดำเนินการระบบ...", 
+    image: img8 
+  },
+  { 
+    id: 9, 
+    title: "Order Summary", 
+    description: "ระบุจำนวนรายการอาหารที่สั่ง พร้อมแสดงสรุปยอดชำระเงินรวม", 
+    image: img9 
+  },
+  { 
+    id: 10, 
+    title: "Restaurant Order Queue", 
+    description: "ระบบฝั่งร้านอาหารสำหรับรับออเดอร์ พร้อมแสดงคิวที่ต้องจัดเตรียม", 
+    image: img10 
+  },
+  { 
+    id: 18, 
+    title: "Order Status Tracking", 
+    description: "หน้าต่างแสดงรายการออเดอร์ที่ดำเนินการสำเร็จและออเดอร์ที่ถูกยกเลิก", 
+    image: img10_1 
+  },
+  { 
+    id: 11, 
+    title: "Order Details", 
+    description: "แสดงรายละเอียดเมนูอาหารที่ต้องจัดเตรียมในแต่ละคิว", 
+    image: img11 
+  },
+  { 
+    id: 12, 
+    title: "Order Confirmation", 
+    description: "จัดการสถานะออเดอร์ (เสร็จสิ้น/ยกเลิก) เพื่อสรุปและบันทึกลงระบบ", 
+    image: img12 
+  },
+  { 
+    id: 13, 
+    title: "Order History", 
+    description: "แสดงประวัติการสั่งซื้อที่เสร็จสิ้น พร้อมสรุปรายการและยอดชำระ", 
+    image: img13 
+  },
+  { 
+    id: 14, 
+    title: "Sales Dashboard", 
+    description: "หน้าแดชบอร์ดสรุปข้อมูลสถิติและยอดขายทั้งหมดของร้านอาหาร", 
+    image: img14 
+  },
+  { 
+    id: 15, 
+    title: "Help & Support", 
+    description: "ช่องทางสำหรับส่งข้อมูลเพื่อแจ้งปัญหาการใช้งานหรือขอความช่วยเหลือ", 
+    image: img15 
+  },
+  { 
+    id: 16, 
+    title: "QR Code Management", 
+    description: "ฟังก์ชันสร้างและสแกน QR Code สำหรับระบบการสั่งอาหารออนไลน์", 
+    image: img16 
+  },
+  { 
+    id: 17, 
+    title: "QR Code Scanner", 
+    description: "หน้าต่างใช้งานกล้องสำหรับสแกน QR Code เพื่อทำรายการ", 
+    image: img17 
+  },
 ];
 
 const techStack = [

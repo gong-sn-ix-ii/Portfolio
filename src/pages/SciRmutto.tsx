@@ -4,20 +4,20 @@ import { ChevronLeft, Users, Award, Calendar, Activity, Flag, ZoomIn, X, Megapho
 import { Link } from 'react-router-dom';
 
 // 📸 Import รูปภาพ
-import certImg from "../assets/images/credentials/SciRmutto/00.jpg"; 
-import img0 from "../assets/images/credentials/SciRmutto/0.jpg";
-import img1 from "../assets/images/credentials/SciRmutto/1.jpg";
-import img2 from "../assets/images/credentials/SciRmutto/2.jpg";
-import img3 from "../assets/images/credentials/SciRmutto/3.jpg";
-import img4 from "../assets/images/credentials/SciRmutto/4.jpg";
-import img5 from "../assets/images/credentials/SciRmutto/5.jpg";
-import img6 from "../assets/images/credentials/SciRmutto/6.jpg";
-import img7 from "../assets/images/credentials/SciRmutto/7.jpg";
-import img8 from "../assets/images/credentials/SciRmutto/8.jpg";
-import img9 from "../assets/images/credentials/SciRmutto/9.jpg";
-import img10 from "../assets/images/credentials/SciRmutto/10.jpg";
+import certImg from "../assets/images/credentials/SciRmutto/00.webp"; 
+import img0 from "../assets/images/credentials/SciRmutto/0.webp";
+import img1 from "../assets/images/credentials/SciRmutto/1.webp";
+import img2 from "../assets/images/credentials/SciRmutto/2.webp";
+import img3 from "../assets/images/credentials/SciRmutto/3.webp";
+import img4 from "../assets/images/credentials/SciRmutto/4.webp";
+import img5 from "../assets/images/credentials/SciRmutto/5.webp";
+import img6 from "../assets/images/credentials/SciRmutto/6.webp";
+import img7 from "../assets/images/credentials/SciRmutto/7.webp";
+import img8 from "../assets/images/credentials/SciRmutto/8.webp";
+import img9 from "../assets/images/credentials/SciRmutto/9.webp";
+import img10 from "../assets/images/credentials/SciRmutto/10.webp";
 
-import cerScismo from "../assets/images/credentials/SciRmutto/sci.png"
+import cerScismo from "../assets/images/credentials/SciRmutto/sci.webp"
 
 // 🏆 ข้อมูลทักษะ Soft Skills ที่ได้จากการทำกิจกรรม
 const leadershipSkills = [

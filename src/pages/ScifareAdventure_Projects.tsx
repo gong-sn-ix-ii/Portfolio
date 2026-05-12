@@ -4,24 +4,24 @@ import { ChevronLeft, Terminal, Cpu, Binary, FolderGit2, Code2, ZoomIn, X } from
 import { Link } from 'react-router-dom';
 
 // 📸 Import รูปภาพทั้งหมด (18 รูป)
-import img1 from "../assets/images/projects/scifare/1.jpg";
-import img2 from "../assets/images/projects/scifare/2.jpg";
-import img3 from "../assets/images/projects/scifare/3.jpg";
-import img4 from "../assets/images/projects/scifare/4.jpg";
-import img4_1 from "../assets/images/projects/scifare/4_1.jpg";
-import img4_2 from "../assets/images/projects/scifare/4_2.jpg";
-import img4_3 from "../assets/images/projects/scifare/4_3.jpg";
-import img4_5 from "../assets/images/projects/scifare/4_5.jpg";
-import img5 from "../assets/images/projects/scifare/5.jpg";
-import img5_1 from "../assets/images/projects/scifare/5_1.jpg";
-import img6 from "../assets/images/projects/scifare/6.jpg";
-import img6_1 from "../assets/images/projects/scifare/6_1.jpg";
-import img7 from "../assets/images/projects/scifare/7.jpg";
-import img7_1 from "../assets/images/projects/scifare/7_1.jpg";
-import img8 from "../assets/images/projects/scifare/8.jpg";
-import img8_1 from "../assets/images/projects/scifare/8_1.jpg";
-import credit from "../assets/images/projects/scifare/credit.jpg";
-import tutorial from "../assets/images/projects/scifare/tutorial.jpg";
+import img1 from "../assets/images/projects/scifare/1.webp";
+import img2 from "../assets/images/projects/scifare/2.webp";
+import img3 from "../assets/images/projects/scifare/3.webp";
+import img4 from "../assets/images/projects/scifare/4.webp";
+import img4_1 from "../assets/images/projects/scifare/4_1.webp";
+import img4_2 from "../assets/images/projects/scifare/4_2.webp";
+import img4_3 from "../assets/images/projects/scifare/4_3.webp";
+import img4_5 from "../assets/images/projects/scifare/4_5.webp";
+import img5 from "../assets/images/projects/scifare/5.webp";
+import img5_1 from "../assets/images/projects/scifare/5_1.webp";
+import img6 from "../assets/images/projects/scifare/6.webp";
+import img6_1 from "../assets/images/projects/scifare/6_1.webp";
+import img7 from "../assets/images/projects/scifare/7.webp";
+import img7_1 from "../assets/images/projects/scifare/7_1.webp";
+import img8 from "../assets/images/projects/scifare/8.webp";
+import img8_1 from "../assets/images/projects/scifare/8_1.webp";
+import credit from "../assets/images/projects/scifare/credit.webp";
+import tutorial from "../assets/images/projects/scifare/tutorial.webp";
 
 // 🗂️ ข้อมูลหมวดหมู่ภาพหลัก (Core Environment)
 const coreScreens = [
@@ -279,7 +279,7 @@ const ScifareAdventureProject: React.FC = memo(() => {
                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
                        />
                        <div className="absolute bottom-2 right-2 bg-black/80 px-2 py-0.5 text-[10px] font-mono text-white/70 border border-white/10 z-20">
-                         frame_{sIdx}.jpg
+                         frame_{sIdx}.webp
                        </div>
                     </div>
                   ))}

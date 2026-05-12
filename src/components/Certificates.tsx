@@ -1,20 +1,23 @@
 import React, { useState, useMemo } from "react";
-import ai1 from "../assets/images/certificates/AI Enginner Prompt.jpg";
-import refAI from "../assets/images/certificates/email_20240624162519_page-0001.jpg";
-import ctf from "../assets/images/certificates/CTF_Cert Senior THCTT24_Num675_page-0001.jpg";
-import unity from "../assets/images/certificates/Unity Certified User Programmer_page-0001.jpg";
-import udemy_ai from "../assets/images/certificates/udemy_ai_machine.jpg";
-import udemy_block from "../assets/images/certificates/udemy_blockchain.jpg";
-import udemy_fullstack from "../assets/images/certificates/udemy_fullstack.jpg";
-import depa from "../assets/images/certificates/depa.jpg";
-import certiport from "../assets/images/certificates/Certified by Certiport.png";
-import futureskill_game from "../assets/images/certificates/future_certificate-coding-for-metaverse create game_page-0001.jpg";
-import futureskill_page from "../assets/images/certificates/future_certificate-coding-for-metaverse_page-0001.jpg";
-import konD from "../assets/images/certificates/คนดีศรีเทคโน.jpg";
-import bigData from "../assets/images/certificates/cer_BigData.png";
-import excel from "../assets/images/certificates/cer_MicrosoftExcel.png";
-import mspow from "../assets/images/certificates/cer_MicrosoftPowerApp.png";
-import buuJava from "../assets/images/certificates/buu_JavaProgrammingFundamentals.png";
+import ai1 from "../assets/images/certificates/AI Enginner Prompt.webp";
+import refAI from "../assets/images/certificates/email_20240624162519_page-0001.webp";
+import ctf from "../assets/images/certificates/CTF_Cert Senior THCTT24_Num675_page-0001.webp";
+import unity from "../assets/images/certificates/Unity Certified User Programmer_page-0001.webp";
+import udemy_ai from "../assets/images/certificates/udemy_ai_machine.webp";
+import udemy_block from "../assets/images/certificates/udemy_blockchain.webp";
+import udemy_fullstack from "../assets/images/certificates/udemy_fullstack.webp";
+import depa from "../assets/images/certificates/depa.webp";
+import certiport from "../assets/images/certificates/Certified by Certiport.webp";
+import futureskill_game from "../assets/images/certificates/future_certificate-coding-for-metaverse create game_page-0001.webp";
+import futureskill_page from "../assets/images/certificates/future_certificate-coding-for-metaverse_page-0001.webp";
+import konD from "../assets/images/certificates/คนดีศรีเทคโน.webp";
+import bigData from "../assets/images/certificates/cer_BigData.webp";
+import excel from "../assets/images/certificates/cer_MicrosoftExcel.webp";
+import mspow from "../assets/images/certificates/cer_MicrosoftPowerApp.webp";
+import buuJava from "../assets/images/certificates/buu_JavaProgrammingFundamentals.webp";
+import nsc_cer from "../assets/images/certificates/nsc.webp";
+import nsc_budget from "../assets/images/certificates/nsc-budget.webp";
+import sci_cer from "../assets/images/certificates/sci.webp";
 
 // 1. แอบเพิ่มฟิลด์ category เข้าไปในข้อมูล เพื่อใช้จัดหมวดหมู่
 const certData = [
@@ -38,16 +41,36 @@ const certData = [
     image: ctf,
     category: "Awards",
   },
-  // {
-  //   id: 3,
-  //   title: "NSC 2024 Finalist",
-  //   issuer: "National Software Contest",
-  //   rank: "Project: Cybersecurise",
-  //   date: "2024",
-  //   color: "from-[#A855F7] to-[#22D3EE]",
-  //   image: refAI,
-  //   category: "Awards",
-  // },
+  {
+    id: 3,
+    title: "NSC 2024 Finalist",
+    issuer: "National Software Contest",
+    rank: "Project: Cybersecurise",
+    date: "2024",
+    color: "from-[#A855F7] to-[#22D3EE]",
+    image: nsc_cer,
+    category: "Awards",
+  },
+    {
+    id: 4,
+    title: "NSC 2024 Project funding from NECTEC, NSTDA",
+    issuer: "National Software Contest",
+    rank: "Project: Cybersecurise",
+    date: "2024",
+    color: "from-[#A855F7] to-[#22D3EE]",
+    image: nsc_budget,
+    category: "Awards",
+  },
+      {
+    id: 20,
+    title: "Student Club, Faculty of Science, President of the Student Council, Sports Division.",
+    issuer: "Leadership",
+    rank: "Project: Cybersecurise",
+    date: "2024",
+    color: "from-[#A855F7] to-[#22D3EE]",
+    image: sci_cer,
+    category: "Awards",
+  },
   {
     id: 13,
     title: "Unity Certified User: Programmer",
