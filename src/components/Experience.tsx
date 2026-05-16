@@ -20,7 +20,7 @@ const experiences: ExperienceItem[] = [
     period: "พฤษภาคม 2568 – พฤศจิกายน 2568",
     duration: "6 เดือน",
     type: "FREELANCE",
-    role: "Freelance Full-Stack Developer",
+    role: "Freelance Mobile & Full-Stack Developer",
     company: "Self-Employed",
     location: "Remote",
     description:

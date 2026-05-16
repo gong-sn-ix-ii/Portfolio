@@ -9,14 +9,14 @@ import Skills from "../components/Skills";
 import profileImg from "../assets/images/profile.webp";
 import { X, FileText, Eye } from "lucide-react"; // เพิ่ม Icon สำหรับ Preview
 import { useLocation } from "react-router-dom";
+import Contact from "../components/Contact";
 
 // Rotating roles for typewriter-like effect
-const ROLES = [
-  "Junior Software Engineer",
-  "Junior Mobile Developer",
-  "Cybersecurity Enthusiast",
-  "Junior Full-Stack Developer",
-  "AI Application Developer",
+const ROLES = [ 
+  "Junior Flutter Developer",
+  "Junior Android Developer",
+  "Junior Mobile Developer", 
+  "Cybersecurity & AI Enthusiast", 
 ];
 
 const useRotatingText = (items: string[], interval = 2500) => {
@@ -140,7 +140,7 @@ const Home: React.FC = () => {
                     {/* Profile Image — from src/assets/images/profile.jpg */}
                     <img
                       src={profileImg}
-                      alt="Kitsada Khamnaun"
+                      alt="Kitsada Khamnuan"
                       className="w-full h-full object-cover"
                       onError={(e) => {
                         (e.currentTarget as HTMLImageElement).style.display = "none";
@@ -216,7 +216,7 @@ const Home: React.FC = () => {
                 {/* Name — Theme gradient (purple → cyan only) */}
                 <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight leading-[1.05] mb-3">
                   <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#A855F7] to-[#22D3EE]">
-                    Kitsada Khamnaun
+                    Kitsada Khamnuan
                   </span>
                 </h1>
                 <p className="text-base md:text-lg text-gray-500 mb-6">
@@ -261,7 +261,7 @@ const Home: React.FC = () => {
                 {/* CTAs — 🌟 ปรับเปลี่ยนเป็น Preview ตามคำสั่ง 🌟 */}
                 <div className="flex flex-wrap justify-center lg:justify-start gap-3 mb-2"> 
                   <button 
-                    onClick={() => openPdf("/resume-th.pdf", "Professional Resume")}
+                    onClick={() => openPdf("/resume-en.pdf", "Professional Resume")}
                     className="relative group cursor-pointer"
                   >
                     <div className="absolute inset-0 bg-gradient-to-r from-[#A855F7] to-[#22D3EE] blur-lg rounded-lg opacity-40 group-hover:opacity-70 transition-all"></div>
@@ -273,7 +273,7 @@ const Home: React.FC = () => {
 
                   {/* Primary: Preview CV */}
                   <button 
-                    onClick={() => openPdf("/cv-th.pdf", "Full Curriculum Vitae")}
+                    onClick={() => openPdf("/cv.pdf", "Full Curriculum Vitae")}
                     className="relative group cursor-pointer"
                   >
                     <div className="absolute -inset-px bg-gradient-to-r from-[#A855F7] to-[#22D3EE] rounded-lg opacity-100"></div>
@@ -467,7 +467,7 @@ const Home: React.FC = () => {
 
                   {/* Description */}
                   <p className="text-sm text-gray-300 leading-relaxed mb-4 flex-1">
-                    <span className="text-white font-semibold">"Cybersecurise"</span> — Anti-fraud mobile application protecting users from scammers via 4 features: dangerous-settings scanner, SMS scam/spam/OTP detection, security knowledge quiz, and blacklist lookup integrated with CheckGon and ChaladOhn.
+                    <span className="text-white font-semibold">"Cybersecurise"</span> — แอปพลิเคชันบนมือถือสำหรับป้องกันมิจฉาชีพ ช่วยปกป้องผู้ใช้งานผ่าน 5 ฟีเจอร์หลัก ได้แก่: ระบบตรวจสอบการตั้งค่าที่มีความเสี่ยง, ตรวจสอบแอปพลิเคชันที่อาจเป็นอันตราย, ระบบตรวจจับ SMS หลอกลวง/สแปม/OTP, แบบทดสอบความรู้ด้านความปลอดภัยไซเบอร์, และระบบตรวจสอบรายชื่อบัญชีดำ (Blacklist) ที่เชื่อมต่อฐานข้อมูลกับ CheckGon และ Chaladohn
                   </p>
 
                   {/* Footer */}
@@ -515,7 +515,7 @@ const Home: React.FC = () => {
 
                   {/* Description with emphasis on award exclusivity */}
                   <p className="text-sm text-gray-300 leading-relaxed mb-4 flex-1">
-                    Ranked <span className="text-white font-semibold">8th nationally</span> · Awarded the <span className="text-white font-semibold">"AI Engineer"</span> title — granted exclusively to <span className="text-[#22D3EE] font-semibold">Top 10 finalists</span>. Demonstrated advanced Prompt Engineering: Chain-of-Thought, Few-shot, Role Prompting, and LLM integration under competition time pressure.
+                    คว้าอันดับ <span className="text-white font-semibold">8 ระดับประเทศ</span> · ได้รับรางวัล <span className="text-white font-semibold">"AI Engineer"</span> — ซึ่งมอบให้เฉพาะ <span className="text-[#22D3EE] font-semibold">ผู้เข้ารอบ Top 10</span> เท่านั้น แสดงทักษะ Prompt Engineering ขั้นสูง มาประยุกต์ใช้งานจริง ภายใต้ความกดดันด้านเวลาในการแข่งขัน
                   </p>
 
                   {/* Footer */}
@@ -585,6 +585,8 @@ const Home: React.FC = () => {
           </motion.div>
         )}
       </AnimatePresence>
+
+        <Contact />
 
       </div>
     </div>

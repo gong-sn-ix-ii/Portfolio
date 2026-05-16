@@ -12,7 +12,7 @@ const projectsData = [
     icon: <Shield className="w-5 h-10 text-purple-400" />,
     categoryLabel: "🏆 NSC 2024 NATIONAL FINALIST · CYBERSECURITY",
     title: "Cybersecurise",
-    description: "แอปพลิเคชันมือถือป้องกันภัยมิจฉาชีพ มี 4 ฟีเจอร์หลัก: (1) สแกนการตั้งค่าเครื่องที่อาจเป็นอันตราย (2) ตรวจจับ SMS Scam/Spam/OTP ด้วย AI/NLP (3) แบบทดสอบความรู้ด้านความปลอดภัย (4) ตรวจสอบเลขบัญชี/เบอร์โทร/ชื่อ ใน Blacklist ผ่าน CheckGon และ ChaladOhn — ผ่านเข้ารอบชิงระดับประเทศ NSC 2024 พร้อมรับเงินสนับสนุนจาก NECTEC",
+    description: "แอปพลิเคชันมือถือป้องกันภัยมิจฉาชีพ มี 5 ฟีเจอร์หลัก: (1) สแกนการตั้งค่าเครื่องที่อาจเป็นอันตราย (2) สแกนแอปพลิเคชันและตรวจสอบสิทธิ์การเข้าถึงเพื่อประเมินความเสี่ยงอันตราย (3) ตรวจจับ SMS Scam/Spam/OTP ด้วย AI/NLP (4) แบบทดสอบความรู้ด้านความปลอดภัย (5) ตรวจสอบเลขบัญชี/เบอร์โทร/ชื่อ ใน Blacklist ผ่าน CheckGon และ ChaladOhn — ผ่านเข้ารอบชิงระดับประเทศ NSC 2024 พร้อมรับเงินสนับสนุนจาก NECTEC",
     tags: ["NSC 2024 Finalist", "Anti-Fraud", "Mobile", "AI/NLP"],
     languages: [
       { name: "Kotlin", color: "#A97BFF" },
@@ -24,23 +24,7 @@ const projectsData = [
     demoUrl : "",
     projectUrl: "/cybersecurise"
   },
-  {
-    id: 7,
-    filterCategory: "AI",
-    icon: <Cpu className="w-5 h-5 text-pink-400" />,
-    categoryLabel: "🤖 AI HACKATHON TOP 10 · AI/NLP",
-    title: "AI Detect Scam Spam SMS (Accuracy 95%)",
-    description: "ระบบ Machine Learning ตรวจจับและจำแนกประเภท SMS หลอกลวง (Scam/Spam/OTP/Legitimate) ด้วย Natural Language Processing — เป็น ML Model ที่ใช้ใน Cybersecurise และเป็นพื้นฐานของผลงาน AI Engineer Prompt Hackathon 2024 (อันดับ 8 ระดับประเทศ)",
-    tags: ["NLP", "Classification", "AI Hackathon Top 10", "Python"],
-    languages: [
-      { name: "Python", color: "#3572A5" },
-      { name: "Jupyter Notebook", color: "#DA5B0B" }
-    ],
-    githubUrl: "",
-    demoUrl : "/ai-sms-detect",
-    projectUrl: "/ai-sms-detect"
-  },
-  {
+    {
     id: 2,
     filterCategory: "Mobile/Web",
     icon: <Smartphone className="w-5 h-5 text-blue-400" />,
@@ -57,6 +41,22 @@ const projectsData = [
     githubUrl: "https://github.com/gong-sn-ix-ii/Boundless.git",
     demoUrl : "",
     projectUrl: "/boundless"
+  },
+  {
+    id: 7,
+    filterCategory: "AI",
+    icon: <Cpu className="w-5 h-5 text-pink-400" />,
+    categoryLabel: "🤖 AI HACKATHON TOP 10 · AI/NLP",
+    title: "AI Detect Scam Spam SMS (Accuracy 95%)",
+    description: "ระบบ Machine Learning ตรวจจับและจำแนกประเภท SMS หลอกลวง (Scam/Spam/OTP/Legitimate) ด้วย Natural Language Processing — เป็น ML Model ที่ใช้ใน Cybersecurise และเป็นพื้นฐานของผลงาน AI Engineer Prompt Hackathon 2024 (อันดับ 8 ระดับประเทศ)",
+    tags: ["NLP", "Classification", "AI Hackathon Top 10", "Python"],
+    languages: [
+      { name: "Python", color: "#3572A5" },
+      { name: "Jupyter Notebook", color: "#DA5B0B" }
+    ],
+    githubUrl: "",
+    demoUrl : "/ai-sms-detect",
+    projectUrl: "/ai-sms-detect"
   },
   {
     id: 4,

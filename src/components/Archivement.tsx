@@ -4,8 +4,9 @@ import { ExternalLink, Award, Calendar, Users, Shield } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 // Import รูปภาพ (แนะนำให้แปลงไฟล์เหล่านี้เป็น .webp ในอนาคตเพื่อความเร็วขั้นสุด)
-import hackathon from "../assets/images/credentials/hackathon-2024.webp";
-import nsc2024 from "../assets/images/credentials/NSC.webp";
+// import hackathon from "../assets/images/credentials/hackathon-2024.webp"; 
+import hackathon from "../assets/images/credentials/Hackathon 2024/1.webp"; 
+import nsc2024 from "../assets/images/credentials/NSC2024/2.webp";
 import ctf from "../assets/images/credentials/CTF.webp";
 import icpc2024 from "../assets/images/credentials/ICPC.webp";
 import sci_rmutto from "../assets/images/credentials/SciRmutto/00.webp"
