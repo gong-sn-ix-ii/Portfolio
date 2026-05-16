@@ -9,14 +9,16 @@ import Skills from "../components/Skills";
 import profileImg from "../assets/images/profile.webp";
 import { X, FileText, Eye } from "lucide-react"; // เพิ่ม Icon สำหรับ Preview
 import { useLocation } from "react-router-dom";
+import { GMAIL_COMPOSE_URL } from "../utils/gmail";
 import Contact from "../components/Contact";
 
 // Rotating roles for typewriter-like effect
-const ROLES = [ 
-  "Junior Flutter Developer",
-  "Junior Android Developer",
-  "Junior Mobile Developer", 
-  "Cybersecurity & AI Enthusiast", 
+const ROLES = [
+  "Junior Software Engineer",
+  "Junior Mobile Developer",
+  "Cybersecurity Enthusiast",
+  "Junior Full-Stack Developer",
+  "AI Application Developer",
 ];
 
 const useRotatingText = (items: string[], interval = 2500) => {
@@ -140,7 +142,7 @@ const Home: React.FC = () => {
                     {/* Profile Image — from src/assets/images/profile.jpg */}
                     <img
                       src={profileImg}
-                      alt="Kitsada Khamnuan"
+                      alt="Kitsada Khamnaun"
                       className="w-full h-full object-cover"
                       onError={(e) => {
                         (e.currentTarget as HTMLImageElement).style.display = "none";
@@ -216,7 +218,7 @@ const Home: React.FC = () => {
                 {/* Name — Theme gradient (purple → cyan only) */}
                 <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight leading-[1.05] mb-3">
                   <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#A855F7] to-[#22D3EE]">
-                    Kitsada Khamnuan
+                    Kitsada Khamnaun
                   </span>
                 </h1>
                 <p className="text-base md:text-lg text-gray-500 mb-6">
@@ -261,7 +263,7 @@ const Home: React.FC = () => {
                 {/* CTAs — 🌟 ปรับเปลี่ยนเป็น Preview ตามคำสั่ง 🌟 */}
                 <div className="flex flex-wrap justify-center lg:justify-start gap-3 mb-2"> 
                   <button 
-                    onClick={() => openPdf("/resume-en.pdf", "Professional Resume")}
+                    onClick={() => openPdf("/resume-th.pdf", "Professional Resume")}
                     className="relative group cursor-pointer"
                   >
                     <div className="absolute inset-0 bg-gradient-to-r from-[#A855F7] to-[#22D3EE] blur-lg rounded-lg opacity-40 group-hover:opacity-70 transition-all"></div>
@@ -273,7 +275,7 @@ const Home: React.FC = () => {
 
                   {/* Primary: Preview CV */}
                   <button 
-                    onClick={() => openPdf("/cv.pdf", "Full Curriculum Vitae")}
+                    onClick={() => openPdf("/cv-th.pdf", "Full Curriculum Vitae")}
                     className="relative group cursor-pointer"
                   >
                     <div className="absolute -inset-px bg-gradient-to-r from-[#A855F7] to-[#22D3EE] rounded-lg opacity-100"></div>
@@ -300,7 +302,7 @@ const Home: React.FC = () => {
                   </a>
 
                   {/* Social: Email */}
-                  <a href="mailto:gong.sn.ix.ii.dev@gmail.com" className="relative group cursor-pointer">
+                  <a href={GMAIL_COMPOSE_URL} target="_blank" rel="noopener noreferrer" className="relative group cursor-pointer">
                     <button className="relative px-5 py-3 bg-white/[0.03] backdrop-blur-sm rounded-lg text-gray-200 font-bold border border-white/10 hover:border-white/40 hover:bg-white/5 hover:text-white transition-all flex items-center gap-2">
                       <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                       Email
@@ -467,7 +469,7 @@ const Home: React.FC = () => {
 
                   {/* Description */}
                   <p className="text-sm text-gray-300 leading-relaxed mb-4 flex-1">
-                    <span className="text-white font-semibold">"Cybersecurise"</span> — แอปพลิเคชันบนมือถือสำหรับป้องกันมิจฉาชีพ ช่วยปกป้องผู้ใช้งานผ่าน 5 ฟีเจอร์หลัก ได้แก่: ระบบตรวจสอบการตั้งค่าที่มีความเสี่ยง, ตรวจสอบแอปพลิเคชันที่อาจเป็นอันตราย, ระบบตรวจจับ SMS หลอกลวง/สแปม/OTP, แบบทดสอบความรู้ด้านความปลอดภัยไซเบอร์, และระบบตรวจสอบรายชื่อบัญชีดำ (Blacklist) ที่เชื่อมต่อฐานข้อมูลกับ CheckGon และ Chaladohn
+                    <span className="text-white font-semibold">"Cybersecurise"</span> — Anti-fraud mobile application protecting users from scammers via 4 features: dangerous-settings scanner, SMS scam/spam/OTP detection, security knowledge quiz, and blacklist lookup integrated with CheckGon and ChaladOhn.
                   </p>
 
                   {/* Footer */}
@@ -515,7 +517,7 @@ const Home: React.FC = () => {
 
                   {/* Description with emphasis on award exclusivity */}
                   <p className="text-sm text-gray-300 leading-relaxed mb-4 flex-1">
-                    คว้าอันดับ <span className="text-white font-semibold">8 ระดับประเทศ</span> · ได้รับรางวัล <span className="text-white font-semibold">"AI Engineer"</span> — ซึ่งมอบให้เฉพาะ <span className="text-[#22D3EE] font-semibold">ผู้เข้ารอบ Top 10</span> เท่านั้น แสดงทักษะ Prompt Engineering ขั้นสูง มาประยุกต์ใช้งานจริง ภายใต้ความกดดันด้านเวลาในการแข่งขัน
+                    Ranked <span className="text-white font-semibold">8th nationally</span> · Awarded the <span className="text-white font-semibold">"AI Engineer"</span> title — granted exclusively to <span className="text-[#22D3EE] font-semibold">Top 10 finalists</span>. Demonstrated advanced Prompt Engineering: Chain-of-Thought, Few-shot, Role Prompting, and LLM integration under competition time pressure.
                   </p>
 
                   {/* Footer */}
@@ -587,7 +589,7 @@ const Home: React.FC = () => {
       </AnimatePresence>
 
         <Contact />
-
+      
       </div>
     </div>
   );

@@ -1,6 +1,7 @@
 import React, { type ReactNode } from 'react';
 import { motion, type Variants } from 'framer-motion';
 import { Mail, Phone, MessageSquare, Link2, MapPin, Send } from 'lucide-react';
+import { GMAIL_COMPOSE_URL } from '../utils/gmail';
 
 interface ContactItem {
   name: string;
@@ -29,7 +30,7 @@ const contactData: ContactCategory[] = [
       {
         name: "gong.sn.ix.ii.dev@gmail.com",
         value: "Email",
-        href: "mailto:gong.sn.ix.ii.dev@gmail.com",
+        href: GMAIL_COMPOSE_URL,
         icon: <Mail className="w-5 h-5 text-[#F472B6]" />,
       },
       {
@@ -92,13 +93,13 @@ const Contact: React.FC = () => {
       {/* Header */}
       <div className="text-center mb-16 relative z-10">
         <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight text-white mb-4">
-          ช่องทางติดต่อ{' '}
+          Get In{' '}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#22D3EE] to-[#A855F7]">
-            Contact
+            Touch
           </span>
         </h2>
         <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-          สนใจร่วมงาน หรืออยากพูดคุยเรื่องเทคโนโลยี? ติดต่อผมได้ตามช่องทางด้านล่างครับ
+          สนใจร่วมงาน หรืออยากพูดคุยเรื่องเทคโนโลยี? ติดต่อผมได้ตามช่องทางด้านล่าง ตอบกลับภายใน 24 ชั่วโมง
         </p>
       </div>
 
@@ -116,10 +117,12 @@ const Contact: React.FC = () => {
             variants={itemVariants}
             className={`group relative bg-[#0A0A0A] border border-white/5 rounded-2xl p-6 md:p-8 overflow-hidden transition-all duration-500 hover:shadow-[0_0_30px_rgba(0,0,0,0.5)] ${category.borderColor}`}
           >
+            {/* แสง Glow ตอน Hover ด้านหลังการ์ด */}
             <div
               className={`absolute top-0 left-0 w-full h-full bg-gradient-to-br ${category.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none`}
             />
 
+            {/* Category Header */}
             <div className="flex items-center gap-4 mb-8 relative z-10">
               <div className="p-3 bg-white/5 rounded-xl border border-white/10 group-hover:scale-110 transition-transform duration-500">
                 {category.icon}
@@ -129,6 +132,7 @@ const Contact: React.FC = () => {
               </h3>
             </div>
 
+            {/* Contact Items */}
             <div className="flex flex-wrap gap-3 relative z-10">
               {category.items.map((item, idx) => (
                 <a
@@ -165,20 +169,24 @@ const Contact: React.FC = () => {
         transition={{ delay: 0.4 }}
         className="flex flex-col items-center gap-6 mt-12 relative z-10"
       >
+        {/* Location & Availability */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3 text-sm">
           <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-gray-300">
             <MapPin className="w-4 h-4 text-[#A855F7]" />
-            พื้นที่ทำงาน ชลบุรี / กรุงเทพฯ · (On-site or Hybrid) 
+            ชลบุรี / กรุงเทพฯ · On-site or Hybrid
           </div>
-          {/* <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#27C93F]/10 border border-[#27C93F]/30 text-[#27C93F]">
+          <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#27C93F]/10 border border-[#27C93F]/30 text-[#27C93F]">
             <span className="w-2 h-2 rounded-full bg-[#27C93F] animate-pulse" />
-            พร้อมเริ่มงาน · พฤษภาคม 2026
-          </div> */}
+            พร้อมเริ่มงาน · มิถุนายน 2026
+          </div>
         </div>
 
+        {/* CTA */}
         <a
-          href="mailto:gong.sn.ix.ii.dev@gmail.com"
-          className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-gradient-to-r from-[#2266ee] to-[#8400ff] text-white font-bold shadow-lg hover:shadow-[#A855F7]/40 hover:-translate-y-1 transition-all duration-300"
+          href={GMAIL_COMPOSE_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-gradient-to-r from-[#22D3EE] to-[#A855F7] text-white font-bold shadow-lg hover:shadow-[#A855F7]/40 hover:-translate-y-1 transition-all duration-300"
         >
           <Send className="w-5 h-5" />
           ส่งอีเมลหาผม
@@ -193,7 +201,7 @@ const Contact: React.FC = () => {
         transition={{ delay: 0.6 }}
         className="text-center text-gray-500 text-sm mt-16 font-mono relative z-10"
       >
-        © {new Date().getFullYear()} Kitsada Khamnuan 
+        © {new Date().getFullYear()} Kitsada Khamnuan · Made with 💜
       </motion.p>
     </section>
   );
