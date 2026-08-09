@@ -18,9 +18,6 @@ import img7 from "../assets/images/credentials/Hackathon 2024/7.webp";
 import img8 from "../assets/images/credentials/Hackathon 2024/8.webp";
 import img9 from "../assets/images/credentials/Hackathon 2024/9.webp";
 
-// 🎬 Import วิดีโอ
-import hackathonVideo from "../assets/vdo/hackathon/Prompt Ctrl C Ctrl V.mp4";
-
 const highlights = [
   { icon: <Trophy className="w-5 h-5 text-yellow-400" />, title: "RANK", value: "8TH" },
   { icon: <Users className="w-5 h-5 text-blue-400" />, title: "TEAMS", value: "157" },
@@ -195,17 +192,13 @@ const HackathonCredential: React.FC = memo(() => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-gradient-to-br from-[#0F172A]/80 to-[#030712] border border-blue-900/50 rounded-[2rem] p-6 lg:p-8 shadow-xl">
           
           <div className="lg:col-span-8 relative rounded-2xl overflow-hidden border border-white/10 shadow-[0_0_30px_rgba(59,130,246,0.15)] bg-black">
-            {/* 🚀 OPTIMIZATION: เพิ่ม preload="metadata" ให้วิดีโอ */}
-            <video 
-              controls 
-              className="w-full aspect-video object-cover outline-none"
-              poster={img1}
-              controlsList="nodownload"
-              preload="metadata"
-            >
-              <source src={hackathonVideo} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+            <iframe
+              className="w-full aspect-video outline-none"
+              src="https://www.youtube.com/embed/uUT-UaDJ77w"
+              title="AI Hackathon 2024 Team Ctrl C Ctrl V"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
           </div>
 
           <div className="lg:col-span-4 flex flex-col justify-center">

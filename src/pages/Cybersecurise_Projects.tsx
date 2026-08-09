@@ -8,9 +8,6 @@ import {
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
-// 🎬 Import วิดีโอ
-import cyberVideo from '../assets/vdo/cybersecurise/Cybersecurise_Tutorial.mp4';  
-
 // 📸 Import รูปภาพกิจกรรม & เกียรติบัตร
 import nsc1 from "../assets/images/credentials/NSC2024/1.webp";
 import nsc2 from "../assets/images/credentials/NSC2024/2.webp"; 
@@ -122,7 +119,6 @@ const keyTakeaways = [
 ];
 
 const CybersecuriseProject: React.FC = memo(() => {
-  const videoRef = useRef<HTMLVideoElement>(null);
   const [selectedImg, setSelectedImg] = useState<string | null>(null);
 
   const features = [
@@ -257,7 +253,13 @@ const CybersecuriseProject: React.FC = memo(() => {
       <div className="max-w-5xl mx-auto px-6 mb-32 relative z-10 flex flex-col items-center">
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="w-full relative rounded-[2rem] p-2 bg-gradient-to-b from-gray-800 to-[#020617] border border-gray-800 shadow-2xl">
           <div className="relative rounded-[1.5rem] overflow-hidden bg-black aspect-video border border-gray-900 group">
-            <video ref={videoRef} src={cyberVideo} className="w-full h-full object-cover" controls autoPlay muted loop playsInline preload="metadata" />
+            <iframe
+              className="w-full h-full"
+              src="https://www.youtube.com/embed/xgWA_ukfgJg"
+              title="Cybersecurise System Demo"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
             <div className="absolute top-4 left-4 bg-black/60 backdrop-blur-md px-3 py-1.5 rounded-md border border-white/10 flex items-center gap-2 pointer-events-none">
               <PlayCircle className="w-4 h-4 text-[#27C93F]" />
               <span className="text-xs font-mono text-gray-300">SYSTEM_DEMO.MP4</span>

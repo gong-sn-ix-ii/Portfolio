@@ -28,9 +28,12 @@ node_modules/
 dist-*/
 .env
 .vite/
-src/assets/document/cybersecurise/CyberSecurise.zip
-
-src/assets/*
+# assets: เก็บเฉพาะไฟล์ที่โค้ด import จริง (webp + pdf) ที่เหลือเป็นต้นฉบับความละเอียดสูงไม่ต้องขึ้น repo
+src/assets/**
+!src/assets/**/
+!src/assets/**/*.webp
+!src/assets/**/*.pdf
 
 *.mp4
 *.keras
+.claude/
