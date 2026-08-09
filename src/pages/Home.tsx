@@ -14,11 +14,9 @@ import Contact from "../components/Contact";
 
 // Rotating roles for typewriter-like effect
 const ROLES = [
-  "Junior Software Engineer",
-  "Junior Mobile Developer",
-  "Cybersecurity Enthusiast",
   "Junior Full-Stack Developer",
-  "AI Application Developer",
+  "Software Engineer",
+  "Mobile Developer (Flutter)",
 ];
 
 const useRotatingText = (items: string[], interval = 2500) => {
@@ -98,6 +96,7 @@ const Home: React.FC = () => {
                 <a href="#experiences" className="hover:text-[#ffd815] transition-colors">Experience</a>
                 <a href="#skills" className="hover:text-[#F472B6] transition-colors">Skills</a>
                 <a href="#certificates" className="hover:text-[#ff4d4d] transition-colors">Certificates</a>
+                <a href="#contact" className="hover:text-[#ff4d4d] transition-colors">Contact</a>
                 <a href="/resume-en.pdf" download className="relative group cursor-pointer hidden md:block">
                 <div className="absolute inset-0 bg-[#A855F7]/40 blur-md rounded-lg group-hover:bg-[#A855F7]/60 transition-all"></div>
                 <button className="relative px-5 py-2 bg-gradient-to-b from-[#181818] to-black rounded-lg text-white text-sm font-semibold border border-white/20 hover:border-white/40 transition-all">
@@ -142,7 +141,7 @@ const Home: React.FC = () => {
                     {/* Profile Image — from src/assets/images/profile.jpg */}
                     <img
                       src={profileImg}
-                      alt="Kitsada Khamnaun"
+                      alt="Kitsada Khamnuan"
                       className="w-full h-full object-cover"
                       onError={(e) => {
                         (e.currentTarget as HTMLImageElement).style.display = "none";
@@ -186,7 +185,7 @@ const Home: React.FC = () => {
                       <div className="absolute inset-0 rounded-lg bg-[#22D3EE]/10"></div>
                       <div className="relative flex items-center gap-1.5">
                         <svg className="w-3.5 h-3.5 text-[#22D3EE]" viewBox="0 0 24 24" fill="currentColor"><path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A1 1 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.32.17.53.5.53.88v9M12 4.15L6.04 7.5L12 10.85l5.96-3.35L12 4.15M5 15.91l6 3.38v-6.71L5 9.21v6.7m14 0v-6.7l-6 3.37v6.71l6-3.38z"/></svg>
-                        <span className="text-xs font-extrabold text-white tracking-wide">AI Hackathon (Prompt) 2024 · Top 8</span>
+                        <span className="text-xs font-extrabold text-white tracking-wide">AI Hackathon 2024 (Prompt Engineer) · Top 8</span>
                       </div>
                     </div>
                   </motion.div>
@@ -207,7 +206,7 @@ const Home: React.FC = () => {
                     <span className="absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75 animate-ping"></span>
                     <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
                   </span>
-                  Available for Junior Software Engineer · Chonburi / Bangkok
+                  Available for Junior Full Stack / Software Developer · Chonburi / Bangkok
                 </div>
 
                 {/* Greeting */}
@@ -218,7 +217,7 @@ const Home: React.FC = () => {
                 {/* Name — Theme gradient (purple → cyan only) */}
                 <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight leading-[1.05] mb-3">
                   <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#A855F7] to-[#22D3EE]">
-                    Kitsada Khamnaun
+                    Kitsada Khamnuan
                   </span>
                 </h1>
                 <p className="text-base md:text-lg text-gray-500 mb-6">
@@ -241,7 +240,7 @@ const Home: React.FC = () => {
 
                 {/* Tagline */}
                 <p className="text-base md:text-lg text-gray-300 max-w-xl mb-8 leading-relaxed">
-                  Building <span className="text-white font-semibold">secure</span> and <span className="text-white font-semibold">intelligent</span> applications. Focused on <span className="text-[#A855F7] font-semibold">Cybersecurity</span> and <span className="text-[#22D3EE] font-semibold">AI Engineering</span>.
+                  Building <span className="text-white font-semibold">secure</span> and <span className="text-white font-semibold">maintainable</span> applications. Focused on <span className="text-[#A855F7] font-semibold">Full Stack</span> development and <span className="text-[#22D3EE] font-semibold">Mobile</span> delivery.
                 </p>
 
                 {/* Quick info bar — minimal, no emojis */}
@@ -262,20 +261,33 @@ const Home: React.FC = () => {
 
                 {/* CTAs — 🌟 ปรับเปลี่ยนเป็น Preview ตามคำสั่ง 🌟 */}
                 <div className="flex flex-wrap justify-center lg:justify-start gap-3 mb-2"> 
-                  <button 
-                    onClick={() => openPdf("/resume-th.pdf", "Professional Resume")}
+                  <button
+                    onClick={() => openPdf("/resume-en.pdf", "Resume · English")}
                     className="relative group cursor-pointer"
                   >
                     <div className="absolute inset-0 bg-gradient-to-r from-[#A855F7] to-[#22D3EE] blur-lg rounded-lg opacity-40 group-hover:opacity-70 transition-all"></div>
                     <div className="relative px-5 py-3 bg-gradient-to-r from-[#A855F7] to-[#22D3EE] rounded-lg text-white font-bold flex items-center gap-2 shadow-lg">
                       <Eye className="w-4 h-4" />
                       Preview Resume
+                      <span className="ml-1 text-[11px] font-bold px-1.5 py-0.5 rounded bg-white/25 tracking-wide">EN</span>
+                    </div>
+                  </button>
+
+                  {/* Secondary: Preview Resume — ภาษาไทย */}
+                  <button
+                    onClick={() => openPdf("/resume-th.pdf", "Resume · ภาษาไทย")}
+                    className="relative group cursor-pointer"
+                  >
+                    <div className="absolute -inset-px bg-gradient-to-r from-[#A855F7] to-[#22D3EE] rounded-lg opacity-60 group-hover:opacity-100 transition-all"></div>
+                    <div className="relative px-5 py-3 bg-[#020617] rounded-lg text-white font-bold flex items-center gap-2 m-[1px]">
+                      <Eye className="w-4 h-4" />
+                      Resume
+                      <span className="ml-1 text-[11px] font-bold px-1.5 py-0.5 rounded bg-white/10 tracking-wide">TH</span>
                     </div>
                   </button>
 
                   {/* Primary: Preview CV */}
-                  <button 
-                    onClick={() => openPdf("/cv-th.pdf", "Full Curriculum Vitae")}
+                  {/* <button  
                     className="relative group cursor-pointer"
                   >
                     <div className="absolute -inset-px bg-gradient-to-r from-[#A855F7] to-[#22D3EE] rounded-lg opacity-100"></div>
@@ -283,14 +295,26 @@ const Home: React.FC = () => {
                       <FileText className="w-4 h-4 text-[#22D3EE]" />
                       Preview CV
                     </div>
-                  </button>
+                  </button> */}
 
                   {/* Social: GitHub */}
-                  <a href="https://github.com/gong-sn-ix-ii" target="_blank" rel="noopener noreferrer" className="relative group cursor-pointer">
-                    <button className="relative px-5 py-3 bg-white/[0.03] backdrop-blur-sm rounded-lg text-gray-200 font-bold border border-white/10 hover:border-[#A855F7]/50 hover:bg-[#A855F7]/5 hover:text-white transition-all flex items-center gap-2">
-                      <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-                      GitHub
-                    </button>
+                  <a 
+                    href="https://github.com/gong-sn-ix-ii" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="relative group cursor-pointer inline-block"
+                  >
+                    <div className="absolute -inset-px bg-gradient-to-r from-[#A855F7] to-[#22D3EE] rounded-lg opacity-100"></div>
+                    <div className="relative px-5 py-3 bg-[#020617] rounded-lg text-white font-bold flex items-center gap-2 m-[1px]">
+                      <svg 
+                        className="w-4 h-4 text-[#22D3EE]" 
+                        viewBox="0 0 24 24" 
+                        fill="currentColor"
+                      >
+                        <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                      </svg>
+                      Github
+                    </div>
                   </a>
 
                   {/* Social: LinkedIn */}
@@ -313,7 +337,7 @@ const Home: React.FC = () => {
                 {/* Currently learning line */}
                 <p className="text-xs text-gray-500 mt-6 tracking-wide">
                   <span className="text-[#22D3EE] mr-1">●</span>
-                  Currently learning: CompTIA Security+, eJPT, RAG / AI Agents
+                  Currently focused on: React, TypeScript, Node.js, PostgreSQL and writing well-tested code
                 </p>
               </motion.div>
 
@@ -469,7 +493,7 @@ const Home: React.FC = () => {
 
                   {/* Description */}
                   <p className="text-sm text-gray-300 leading-relaxed mb-4 flex-1">
-                    <span className="text-white font-semibold">"Cybersecurise"</span> — Anti-fraud mobile application protecting users from scammers via 4 features: dangerous-settings scanner, SMS scam/spam/OTP detection, security knowledge quiz, and blacklist lookup integrated with CheckGon and ChaladOhn.
+                    <span className="text-white font-semibold">"Cybersecurise"</span> แอปพลิเคชันบนมือถือสำหรับป้องกันมิจฉาชีพ ช่วยปกป้องผู้ใช้งานผ่าน 5 ฟีเจอร์หลัก ได้แก่: ระบบตรวจสอบการตั้งค่าที่มีความเสี่ยง, ตรวจสอบแอปพลิเคชันที่อาจเป็นอันตราย, ระบบตรวจจับ SMS หลอกลวง/สแปม/OTP, แบบทดสอบความรู้ด้านความปลอดภัยไซเบอร์, และระบบตรวจสอบรายชื่อบัญชีดำ (Blacklist) ที่เชื่อมต่อฐานข้อมูลกับ CheckGon และ Chaladohn
                   </p>
 
                   {/* Footer */}
@@ -502,7 +526,7 @@ const Home: React.FC = () => {
 
                   {/* Title */}
                   <h3 className="text-xl md:text-2xl font-extrabold text-white mb-2 leading-tight">
-                    AI Engineer Prompt Hackathon
+                    AI Hackathon 2024 (Prompt Engineer)
                   </h3>
                   <div className="flex items-center gap-2 mb-3">
                     <div className="text-sm text-[#22D3EE] font-semibold">
@@ -517,7 +541,7 @@ const Home: React.FC = () => {
 
                   {/* Description with emphasis on award exclusivity */}
                   <p className="text-sm text-gray-300 leading-relaxed mb-4 flex-1">
-                    Ranked <span className="text-white font-semibold">8th nationally</span> · Awarded the <span className="text-white font-semibold">"AI Engineer"</span> title — granted exclusively to <span className="text-[#22D3EE] font-semibold">Top 10 finalists</span>. Demonstrated advanced Prompt Engineering: Chain-of-Thought, Few-shot, Role Prompting, and LLM integration under competition time pressure.
+                    <span className="text-white font-semibold">คว้าอันดับ 8 ระดับประเทศของงาน AI Hackathon 2024 (Prompt Engineer)</span> · ได้รับรางวัล<span className="text-white font-semibold">"AI Engineer"</span> มอบให้ผู้ที่เข้ารอบ <span className="text-[#22D3EE] font-semibold">Top 10 ทีม</span> ได้แสดงทักษะ Prompt Engineering ขั้นสูง มาประยุกต์ใช้งานจริง ได้เรียนรู้ทักษะการทำงานเป็นทีม การแก้ปัญหาและโจทย์ต่างๆภายใต้ความกดดันด้านเวลาในการแข่งขัน
                   </p>
 
                   {/* Footer */}

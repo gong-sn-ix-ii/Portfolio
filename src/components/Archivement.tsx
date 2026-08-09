@@ -14,7 +14,7 @@ import sci_rmutto from "../assets/images/credentials/SciRmutto/00.webp"
 const achievements = [
   {
     id: 1,
-    title: "AI Cooking Hackathon 2024",
+    title: "AI Hackathon 2024 (Prompt Engineer)",
     role: "Ranked 8th & AI Engineer Award",
     category: "Competition",
     description: "เข้าร่วมการแข่งขันและได้รับรางวัล AI Engineer ดีเด่นด้าน Prompt Engineering โดยติดอันดับที่ 8 ของงาน Hackathon 2024 ด้วยทีมชื่อ 'ctrl c ctrl v'",

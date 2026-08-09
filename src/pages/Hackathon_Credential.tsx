@@ -28,7 +28,7 @@ const highlights = [
 ];
 
 const galleryImages = [
-  { src: img1, title: "AI Cooking Hackathon", desc: "ภาพรวมโครงการ AI Thailand" },
+  { src: img1, title: "AI Hackathon 2024", desc: "ภาพรวมโครงการ AI Thailand Hakathon 2024" },
   { src: img2, title: "Prize Pool", desc: "รายละเอียดรางวัลการแข่งขัน" },
   { src: img3, title: "Competitors Stats", desc: "สถิติผู้เข้าร่วม 357 คนทั่วประเทศ" },
   { src: img4, title: "Track Levels", desc: "การแบ่งระดับความยากของโจทย์" },
@@ -91,7 +91,7 @@ const HackathonCredential: React.FC = memo(() => {
             </h1>
             <h2 className="text-xl md:text-2xl font-medium text-gray-400 mb-8 flex items-center gap-3">
               <span className="w-8 h-[1px] bg-gray-600"></span>
-              AI Cooking Track
+              AI Hackathon 2024 Prompt Engineering
             </h2>
             
             <p className="text-base text-gray-400 font-light mb-10 max-w-2xl leading-relaxed">

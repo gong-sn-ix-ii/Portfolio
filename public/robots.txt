@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gong-ix-ii-dev.com/sitemap.xml

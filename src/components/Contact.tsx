@@ -28,7 +28,7 @@ const contactData: ContactCategory[] = [
     borderColor: "group-hover:border-[#22D3EE]/50",
     items: [
       {
-        name: "gong.sn.ix.ii.dev@gmail.com",
+        name: "kitsada.developer@gmail.com",
         value: "Email",
         href: GMAIL_COMPOSE_URL,
         icon: <Mail className="w-5 h-5 text-[#F472B6]" />,
@@ -59,13 +59,7 @@ const contactData: ContactCategory[] = [
         href: "https://github.com/gong-sn-ix-ii",
         logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
         invert: true,
-      },
-      {
-        name: "Portfolio",
-        value: "gong-ix-ii-dev.com",
-        href: "https://gong-ix-ii-dev.com",
-        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg",
-      },
+      }, 
     ],
   },
 ];
@@ -93,13 +87,13 @@ const Contact: React.FC = () => {
       {/* Header */}
       <div className="text-center mb-16 relative z-10">
         <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight text-white mb-4">
-          Get In{' '}
+          ช่องทางติดต่อ{' '}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#22D3EE] to-[#A855F7]">
-            Touch
+            Contact
           </span>
         </h2>
         <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-          สนใจร่วมงาน หรืออยากพูดคุยเรื่องเทคโนโลยี? ติดต่อผมได้ตามช่องทางด้านล่าง ตอบกลับภายใน 24 ชั่วโมง
+          สนใจร่วมงาน หรืออยากพูดคุยเรื่องเทคโนโลยี? ติดต่อผมได้ตามช่องทางด้านล่างครับ
         </p>
       </div>
 
@@ -175,10 +169,10 @@ const Contact: React.FC = () => {
             <MapPin className="w-4 h-4 text-[#A855F7]" />
             ชลบุรี / กรุงเทพฯ · On-site or Hybrid
           </div>
-          <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#27C93F]/10 border border-[#27C93F]/30 text-[#27C93F]">
+          {/* <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#27C93F]/10 border border-[#27C93F]/30 text-[#27C93F]">
             <span className="w-2 h-2 rounded-full bg-[#27C93F] animate-pulse" />
             พร้อมเริ่มงาน · มิถุนายน 2026
-          </div>
+          </div> */}
         </div>
 
         {/* CTA */}
@@ -201,7 +195,7 @@ const Contact: React.FC = () => {
         transition={{ delay: 0.6 }}
         className="text-center text-gray-500 text-sm mt-16 font-mono relative z-10"
       >
-        © {new Date().getFullYear()} Kitsada Khamnuan · Made with 💜
+        © {new Date().getFullYear()} Kitsada Khamnuan
       </motion.p>
     </section>
   );

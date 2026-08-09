@@ -4,16 +4,16 @@
 // ที่อาจเปิดเป็นหน้าว่างใน browser ที่ไม่มี email client default
 
 const buildGmailComposeURL = () => {
-  const to = 'gong.sn.ix.ii.dev@gmail.com';
+  const to = 'kitsada.developer@gmail.com';
   const subject = 'สนใจติดต่อจาก Portfolio Website';
-  const body = `สวัสดีครับคุณก้อง,
+  const body = `สวัสดีครับคุณกฤษฎา คำนวน,
 
 ผมชื่อ _______________ ตำแหน่ง _______________
 จากบริษัท / องค์กร: _______________
 
 เรื่องที่ติดต่อ:
-☐ สนใจจ้างเป็น Junior Software Engineer / Mobile Developer
-☐ ขอข้อมูลเพิ่มเติมเกี่ยวกับโปรเจกต์
+☐ สนใจจ้างงานตำแหน่ง Full Stack / Software Developer
+☐ ขอข้อมูลเพิ่มเติมเกี่ยวกับโปรเจกต์ผม
 ☐ ร่วมงานในโปรเจกต์
 ☐ อื่น ๆ: _______________
 

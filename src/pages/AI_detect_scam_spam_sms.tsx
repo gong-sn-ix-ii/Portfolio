@@ -124,6 +124,23 @@ const AIDetectScamSpam: React.FC = memo(() => {
             ประมวลผลผ่าน Natural Language Processing (NLP) และเปิดให้บริการผ่าน Public API ฟรี
           </p>
 
+          {/* Model scope / known limitation */}
+          <div className="max-w-3xl mb-10 border-l-2 border-[#FFBD2E]/50 pl-5 text-left">
+            <p className="text-[#FFBD2E] text-xs font-mono font-bold tracking-widest uppercase mb-2">
+              ขอบเขตของโมเดล · Known limitation
+            </p>
+            <p className="text-gray-400 leading-relaxed mb-2">
+              โมเดลนี้เทรนจากชุดข้อมูล SMS ภาษาไทย ซึ่งประกอบด้วยข้อความโฆษณา ข้อความมิจฉาชีพ และข้อความ OTP
+              จึงตรวจสอบได้แม่นยำเฉพาะข้อความในลักษณะดังกล่าวเท่านั้น ยังไม่ได้เทรนกับข้อความสนทนาส่วนตัวในชีวิตประจำวัน
+              ประโยคคุยกันทั่วไปจึงอาจถูกจำแนกผิดพลาดได้ การขยายชุดข้อมูลฝั่งข้อความปกติด้วยบทสนทนาจริงคือสิ่งที่จะพัฒนาต่อไป
+            </p>
+            <p className="text-gray-600 text-sm leading-relaxed">
+              Trained on a Thai SMS corpus of marketing, scam and OTP messages, so it is reliable on that kind of
+              text only. It has not been trained on everyday personal conversation, so casual chat can be
+              misclassified. Expanding the legitimate class with conversational data is the next improvement.
+            </p>
+          </div>
+
           {/* Tech Stack Display */}
           <div className="flex flex-wrap justify-center gap-3 mb-8">
             {techStack.map((tech, idx) => (
@@ -164,11 +181,12 @@ const AIDetectScamSpam: React.FC = memo(() => {
               <p className="mb-4"><span className="text-gray-500 w-24 inline-block">Params</span>: <span className="text-gray-300">msg (string) - The Thai SMS text to classify</span></p>
               
               <p className="text-gray-500 mb-2">Response Format :</p>
-              <pre 
+              <pre
                 className="text-gray-400 bg-[#050505] p-4 rounded-md border border-gray-800 text-xs md:text-sm shadow-inner"
                 dangerouslySetInnerHTML={{ __html: syntaxHighlight(docJsonSample) }}
               />
             </div>
+
             <br/>
           </div>
 

@@ -110,11 +110,6 @@ const eventImages = [
 
 const keyTakeaways = [
   {
-    title: "Technical Leap",
-    description: "ยกระดับทักษะการเขียน Kotlin และการฝังโมเดล AI (NLP) ลงบนแอปพลิเคชันมือถือให้ทำงานแบบ Offline ได้จริง",
-    icon: <TrendingUp className="w-6 h-6 text-[#22D3EE]" />
-  },
-  {
     title: "Performance Optimization",
     description: "เรียนรู้การแก้ปัญหาคอขวด (Bottleneck) ลดการกินทรัพยากรเครื่อง เพื่อให้สแกน SMS ได้แบบ Real-time ไร้ความหน่วง",
     icon: <Lock className="w-6 h-6 text-[#27C93F]" />
@@ -139,16 +134,10 @@ const CybersecuriseProject: React.FC = memo(() => {
     },
     {
       title: "AI NLP Engine",
-      description: "วิเคราะห์บริบทข้อความภาษาไทยด้วยความแม่นยำสูง 95% ทำงานแบบ Offline",
+      description: "วิเคราะห์บริบทข้อความภาษาไทยด้วยความแม่นยำสูง 95%",
       icon: <BrainCircuit className="w-6 h-6 text-[#A855F7]" />,
       colSpan: "md:col-span-1"
     },
-    {
-      title: "Privacy First (Offline)",
-      description: "ประมวลผลบนเครื่อง (On-device) ไม่เก็บและไม่ส่งข้อมูลส่วนตัวผู้ใช้ไปยัง Server",
-      icon: <Lock className="w-6 h-6 text-[#27C93F]" />,
-      colSpan: "md:col-span-3"
-    }
   ];
 
   const techStack = [
@@ -182,11 +171,11 @@ const CybersecuriseProject: React.FC = memo(() => {
               <Smartphone className="w-4 h-4" /> MOBILE APPLICATION
             </div>
             
-            <h1 className="text-6xl md:text-8xl font-black tracking-tighter mb-6 uppercase bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-[#4000ff88]">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-black tracking-tighter mb-6 uppercase bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-[#4000ff88] break-words">
               Cybersecurise
             </h1>
             
-            <p className="text-base md:text-lg text-gray-300 font-light mb-8 leading-[1.8] max-w-2xl text-justify md:text-left">
+            <p className="text-base md:text-lg text-gray-300 font-light mb-8 leading-[1.8] w-full max-w-full md:max-w-2xl break-words [word-break:break-word] text-left">
               แอปพลิเคชันที่ช่วยป้องกันภัยอันตรายจาก <strong className="text-white font-semibold">อาชญากรรมทางเทคโนโลยีดิจิทัล</strong> ของคนไทยให้ครอบคลุมหลายช่องทาง เพื่อลดโอกาสการตกเป็นเหยื่อ โดยเน้นฟีเจอร์ที่สามารถ <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 font-bold">ตรวจสอบและแจ้งเตือน</span> ความเสี่ยงที่อาจเกิดขึ้น เช่น 
               การตรวจสอบประวัติ <span className="text-cyan-400 font-medium">ธุรกรรมทางการเงิน</span>, 
               การแจ้งเตือนสายโทรศัพท์หรือ <span className="text-blue-400 font-medium">SMS ที่อาจเป็นอันตราย</span>, 
@@ -208,9 +197,10 @@ const CybersecuriseProject: React.FC = memo(() => {
               </div>
             </div>
 
-            <a href="https://drive.google.com/file/d/16573uAFrf_xFJZHgUnuVtlGCWwP6CMDa/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 px-8 py-4 bg-[#00b7ff] text-black font-black rounded-2xl hover:scale-105 transition-all shadow-[0_10px_20px_rgba(145,000,156,0.2)]">
+            {/* <a href="https://drive.google.com/file/d/16573uAFrf_xFJZHgUnuVtlGCWwP6CMDa/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 px-8 py-4 bg-[#00b7ff] text-black font-black rounded-2xl hover:scale-105 transition-all shadow-[0_10px_20px_rgba(145,000,156,0.2)]"> */}
+            <a href="https://github.com/gong-sn-ix-ii/Cybersecurise" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 px-8 py-4 bg-[#00b7ff] text-black font-black rounded-2xl hover:scale-105 transition-all shadow-[0_10px_20px_rgba(145,000,156,0.2)]">
               <Code2 className="w-5 h-5" />
-              View Source Code
+              View on Github
             </a>
           </motion.div>
 
@@ -358,7 +348,7 @@ const CybersecuriseProject: React.FC = memo(() => {
       <div className="max-w-5xl mx-auto px-6 mb-32 relative z-10">
         <div className="flex items-center gap-3 mb-10">
           <Lightbulb className="w-8 h-8 text-[#a200ff]" />
-          <h2 className="text-3xl md:text-4xl font-extrabold text-white">What I've <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FFBD2E] to-[#27C93F]">Learned</span></h2>
+          <h2 className="text-3xl md:text-4xl font-extrabold text-white">What I've <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#22D3EE] to-[#a200ff]">Learned</span></h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {keyTakeaways.map((item, idx) => (

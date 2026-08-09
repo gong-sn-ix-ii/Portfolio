@@ -245,8 +245,8 @@ const Experience: React.FC = memo(() => {
           </div>
           <div className="text-sm text-gray-500 font-semibold tracking-wide pt-0.5">
             <span className="text-[#22D3EE]">●</span> Currently exploring opportunities in{" "}
-            <span className="text-white font-bold">Cybersecurity</span> &{" "}
-            <span className="text-white font-bold">AI Engineering</span>
+            <span className="text-white font-bold">Full Stack</span> &{" "}
+            <span className="text-white font-bold">Software Development</span>
           </div>
         </div>
       </div>
